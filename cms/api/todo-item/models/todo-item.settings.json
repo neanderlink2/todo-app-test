@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "todo_items",
+  "info": {
+    "name": "todo-item",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "descricao": {
+      "type": "string"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "AFazer",
+        "EmAndamento",
+        "Concluido"
+      ]
+    },
+    "data_conclusao": {
+      "type": "datetime"
+    }
+  }
+}
